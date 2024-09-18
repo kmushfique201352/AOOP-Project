@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="regiPane" prefHeight="400.0" prefWidth="600.0" styleClass="login-form" stylesheets="@../../css/DesignLogin.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.library.Register">
+   <children>
+      <TextField fx:id="regiID" layoutX="193.0" layoutY="108.0" />
+      <TextField fx:id="regiPassxd" accessibleRole="PASSWORD_FIELD" layoutX="380.0" layoutY="-69.0" />
+      <Button fx:id="regiStudentBtn" layoutX="244.0" layoutY="246.0" mnemonicParsing="false" onAction="#studentBtn" styleClass="login-btn" stylesheets="@../../css/DesignLogin.css" text="Register" />
+      <AnchorPane layoutX="411.0" layoutY="36.0" prefHeight="166.0" prefWidth="133.0" styleClass="card-form" stylesheets="@../../css/DesignLogin.css">
+         <children>
+            <ImageView fx:id="insertImageView" fitHeight="166.0" fitWidth="133.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="insertImage" layoutX="37.0" layoutY="73.0" mnemonicParsing="false" onAction="#insertImage" prefHeight="166.4" prefWidth="133.6" styleClass="edit-btn" stylesheets="@../../css/dashboardDesign.css" text="Insert Image" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="150.0" layoutY="113.0" text="ID" textFill="WHITE">
+         <font>
+            <Font name="Microsoft Sans Serif" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="126.0" layoutY="153.0" text="Password" textFill="WHITE">
+         <font>
+            <Font name="Microsoft Sans Serif" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="regiBack" layoutX="14.0" layoutY="354.0" mnemonicParsing="false" onAction="#back" styleClass="login-btn" stylesheets="@../../css/DesignLogin.css" text="Back" />
+      <PasswordField fx:id="regiPass" layoutX="193.0" layoutY="148.0" />
+   </children>
+</AnchorPane>
